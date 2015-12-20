@@ -7,6 +7,14 @@
 ### 二、打包压缩相关命令：
 
 ### 三、关机重启命令：
+shutdown -h now 关闭系统(1)
+init 0 关闭系统(2)
+telinit 0 关闭系统(3)
+shutdown -h hours:minutes & 按预定时间关闭系统
+shutdown -c 取消按预定时间关闭系统
+shutdown -r now 重启(1)
+reboot 重启(2)
+logout 注销 
 
 ### 四、用户管理命令：
 
@@ -22,7 +30,8 @@ cp source_path target_path 拷贝文件/目录到指定位置
 mv source_path target_path 移动文件/目录到指定位置
 rm -rf dir_name/file_name  删除文件/目录
 cat file_name 查看文件信息
-chmod xxx file_name 更改文件/目录系统  
+chmod xxx file_name 更改文件/目录系统
+diff file_a file_b 比对文件file_a与file_b的差异  
 
 ### 六、权限管理命令：
 
