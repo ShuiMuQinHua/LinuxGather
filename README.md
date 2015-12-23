@@ -17,6 +17,8 @@ reboot 重启(2)
 logout 注销 
 
 ### 四、用户管理命令：
+who 查看当前连接服务器的用户信息
+skill -KILL -v conn_name 去除用户登录进程
 
 ### 五、文件管理命令： 
 
@@ -31,7 +33,8 @@ mv source_path target_path 移动文件/目录到指定位置
 rm -rf dir_name/file_name  删除文件/目录
 cat file_name 查看文件信息
 chmod xxx file_name 更改文件/目录系统
-diff file_a file_b 比对文件file_a与file_b的差异  
+diff file_a file_b 比对文件file_a与file_b的差异
+tail -f file_name 假如另外一个进程在在写log到file_name中，而你用tail，就可以实时的打印出新的内容
 
 ### 六、权限管理命令：
 
