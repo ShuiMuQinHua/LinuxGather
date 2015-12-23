@@ -17,6 +17,8 @@ reboot 重启(2)
 logout 注销 
 
 ### 四、用户管理命令：
+who 查看当前连接服务器的用户信息
+skill -KILL -v conn_name 去除用户登录进程
 
 ### 五、文件管理命令： 
 
