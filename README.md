@@ -50,6 +50,8 @@ chmod xxx file_name 更改文件/目录系统权限
 diff file_a file_b 比对文件file_a与file_b的差异   
 tail -f file_name 假如另外一个进程在在写log到file_name中，而你用tail，就可以实时的打印出新的内容   
 find path -name 'file_name' 在path下查找有file_name的文件/目录   
+wc -lwc file_name 统计file_name的行数，字数，字节数
+ls | wc -l 统计当前文件夹下的文件个数
 
 ### 六、权限管理命令：
 chmod xxx file_name 更改文件/目录系统权限    
