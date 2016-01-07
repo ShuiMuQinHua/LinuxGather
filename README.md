@@ -8,7 +8,8 @@ chkconfig --list 		命令查看已设置的开启自启动列表。
 */5 * * * * test.sh 	定时任务crontab的命令构成为 时间+动作，其时间有分、时、日、月、周五种  
 & 						后台执行程序,用在一个命令的最后
 uname -a 显示系统信息,查看系统版本号的方法还有：cat /proc/version ,cat /etc/redhat-release, cat /etc/issue
-   
+ps aux   显示系统的运行进程  
+
 ### 二、打包压缩相关命令：
 
 ### 三、关机重启命令：
