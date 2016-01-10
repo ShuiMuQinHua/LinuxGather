@@ -8,12 +8,12 @@
  (3)& 						后台执行程序,用在一个命令的最后
  (4)uname -a 显示系统信息,查看系统版本号的方法还有：cat /proc/version ,cat /etc/redhat-release, cat /etc/issue  
  (5)date  显示系统时间
- (6)top
- (7)kill
- (8)skill
- (9)exit
- (10)who 显示当前在线连接的用户
- (11)whoami 显示当前操作的用户
+ (6)top  
+ (7)kill   
+ (8)skill   
+ (9)exit   
+ (10)who 显示当前在线连接的用户   
+ (11)whoami 显示当前操作的用户   
    
 ### 二、打包压缩相关命令：
  (1)gzip：
