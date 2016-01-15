@@ -6,8 +6,12 @@
  (1)chkconfig --list 		命令查看已设置的开启自启动列表。  
  (2)*/5 * * * * test.sh 	定时任务crontab的命令构成为   时间+动作，其时间有分、时、日、月、周五种  
  (3)& 						后台执行程序,用在一个命令的最后   
- (4)uname -a 显示系统信息,查看系统版本号的方法还有：cat /proc/version ,cat /etc/redhat-release, cat /etc/issue    
- (5)date  显示系统时间   
+ (4)uname -a 显示系统信息,查看系统版本号的方法还有：
+    cat /proc/version  
+    cat /etc/redhat-release   
+    cat /etc/issue     
+    lsb_release -a    
+ (5)date +'%Y-%m-%d %H:%M:%S' 指定格式显示系统时间    
  (6)top  
  (7)kill   
  (8)skill   
@@ -20,6 +24,12 @@
  (15) 串联: 使用分号 ;
  (16) 前面成功，则执行后面一条，否则，不执行:&&
  (17) 前面失败，则后一条执行: ||
+ (18) cat /proc/cpuinfo 查看cpu的信息  
+      cat /proc/cpuinfo | grep processor | wc -l  查看CPU核的个数  
+ (19) cat /proc/meminfo  查看内存信息 
+ (20) arch 显示架构  
+ (21) date -s 2016-01-15 15:18:40 设置系统时间  clock -w写入CMOS，避免重启失效
+ (22) ipcs  查看系统使用的IPC资源:ipc共享内存，ipc队列，IPC信号量资源
    
 ### 二、打包压缩相关命令：
  (1)gzip：
