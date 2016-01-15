@@ -16,6 +16,10 @@
  (11)whoami 显示当前操作的用户   
  (12)whatis cmd  显示命令的简短描述
  (13)whereis cmd 显示命令位置
+ (14) 批处理命令连接执行，使用 |
+ (15) 串联: 使用分号 ;
+ (16) 前面成功，则执行后面一条，否则，不执行:&&
+ (17) 前面失败，则后一条执行: ||
    
 ### 二、打包压缩相关命令：
  (1)gzip：
@@ -183,6 +187,7 @@
  (16)find path -name 'file_name' 在path下查找有file_name的文件/目录   
  (17)wc -lwc file_name 统计file_name的行数，字数，字节数   
  (18)ls | wc -l 统计当前文件夹下的文件个数  
+ (19) 找出data.txt的重复行 sort data.txt | uniq -d
 
 ### 六、权限管理命令：
     chmod xxx file_name 更改文件/目录系统权限      
@@ -217,17 +222,17 @@
     (1)sync  sync命令用于数据同步,sync命令是在关闭Linux系统时使用的。Linux 系统中欲写入硬盘的资料有的时候会了效率起见，会写到 filesystem buffer 中，这个 buffer 是一块记忆体空间，如果欲写入硬盘的资料存于此 buffer 中，而系统又突然断电的话，那么资料就会流失了，sync 指令会将存于 buffer 中的资料强制写入硬盘中     
     (2) du 显示文件大小  
     (3) df 显示磁盘的文件系统与使用率  
-    (4)
-    (5)
+    (4)  
+    (5)  
 
-### 10、设备管理：
+### 10、设备管理：  
 
 
-### 11、登录：
-    (1) ssh -p port user@host ssh登录用户
-    (2) scp
+### 11、登录：  
+    (1) ssh -p port user@host ssh登录用户  
+    (2) scp localpath ID@host:path 将本地localpath指向的文件上传到远程主机的path路径  
+    (3) scp -r ID@site:path localpath 以ssh协议，遍历下载path路径下的整个文件系统，到本地的localpath  
     (3) sftp
-    (4)
-    (5) 
+ 
 
 # Shell脚本 #
