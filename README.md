@@ -223,6 +223,9 @@
         例子：write Rollaend   传讯息给 Rollaend，此时 Rollaend 只有一个连线
               write Rollaend pts/2  传讯息给 Rollaend，Rollaend 的连线有 pts/2，pts/3
     (4)ping www.baidu.com  ping主机
+    (5)wget -c url_down_file_path 断点续传下载url_down_file_path文件  
+       wget -b url_down_file_path 后台下载url_down_file_path文件   
+       wget -i filelist.txt  将需要下载的文件保存到filelist.txt中,将下载多个文件
 
 ### 八、VIM命令：   
     (1) vim/vi file_name  编辑文件，没有则创建
