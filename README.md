@@ -23,6 +23,7 @@
  tar -zcvf /home/abc.tar.gz /home/abc        打包，并用gzip压缩
  tar -jcvf /home/abc.tar.bz2 /home/abc      打包，并用bzip2压缩
  当然，如果想解压缩，就直接替换上面的命令  tar -cvf  / tar -zcvf  / tar -jcvf 中的“c” 换成“x” 就可以了。
+ 解压zip文件：unzip a.zip
 
 ### 三、关机重启命令：
  (1)shutdown -h now 立刻关闭系统不重启(1)    
@@ -128,6 +129,8 @@
 chmod xxx file_name 更改文件/目录系统权限      
 chown 更改文件或目录的拥有者或所属组 chown [选项] [所有者][:[组]] 文件; chown mail:mail log2012.log        
 
-### 七、网络通信命令：   
+### 七、网络通信命令： 
+    (1)linux通过命令调取接口：curl http://www.dabaojian.org/api/UserCenter/Haaaaaaaaaaaaaaaa/gettoken
+    (2)ping 检查网络是否可连通
 
 ### 八、VIM命令：   
