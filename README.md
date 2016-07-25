@@ -103,7 +103,7 @@
 
  (11)rm -rf dir_name/file_name  删除文件/目录     
 
- (12)cat file_name 查看文件信息     
+ (12)cat -n file_name 查看文件信息,并编号输出     
 
  (13)chmod xxx file_name 更改文件/目录系统权限  
      xxx:分别代表拥有者，属组，其他人的权限值(r:4;w:2;x:1)  
