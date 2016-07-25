@@ -7,6 +7,8 @@
  (2)*/5 * * * * test.sh 	定时任务crontab的命令构成为   时间+动作，其时间有分、时、日、月、周五种  
  (3)& 						后台执行程序,用在一个命令的最后
  (4)uname -a 显示系统信息,查看系统版本号的方法还有：cat /proc/version ,cat /etc/redhat-release, cat /etc/issue
+ (5)crontab -l  查看系统的定时任务
+    crontab -e  添加系统的定时任务
    
 ### 二、打包压缩相关命令：
  gzip：
@@ -109,7 +111,7 @@
 
  (14)diff file_a file_b 比对文件file_a与file_b的差异     
 
- (15)tail -f file_name 假如另外一个进程在写log到file_name中，而你用tail，就可以实时的打印出新的内容  
+ (15)tail -f file_name      假如另外一个进程在写log到file_name中，而你用tail，就可以实时的打印出新的内容  
      按ctrl+c:即可退回到正常的命令行模式  
 
  (16)find path -name 'file_name' 在path下查找有file_name的文件/目录  
