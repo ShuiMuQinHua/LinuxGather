@@ -1,0 +1,6 @@
+1.首先执行crontab -e  命令   把定时任务加入定时任务列表  
+   * * * * * cd  /root/cyy/; sh  test2.sh        #/root/cyy/  是test2.sh的位置
+
+2.这样之后  系统就可以在每分钟都执行 test2.sh 文件  (这个文件执行的是  向a.txt中写入当前时间的任务)
+ 	#!/bin/sh
+	date +%Y%m%d >>/root/cyy/a.txt
