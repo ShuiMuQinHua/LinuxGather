@@ -1,0 +1,5 @@
+linux发送http请求的两种方式：
+(1)get
+	curl "http://www.baidu.com"
+(2)post
+	curl -d "param1=value1&param2=value2" "http://www.baidu.com"
