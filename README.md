@@ -103,7 +103,11 @@
 
  (11)rm -rf dir_name/file_name  删除文件/目录     
 
- (12)cat -n file_name 查看文件信息,并编号输出     
+ (12)cat -n file_name 
+    查看文件信息,并编号输出(用于把档案串连接后输出到 屏幕或者 >filename 到另一个档案)
+    cat -n a.txt > b.txt  把a.txt文件中的内容加上行号后 写入到b.txt文件中 
+    cat -n a.txt b.txt > c.txt  把a.txt和b.txt文件中的内容加上行号后 写入到c.txt文件中
+    cat /dev/null > b.txt   清空 b.txt文件中的内容
 
  (13)chmod xxx file_name 更改文件/目录系统权限  
      xxx:分别代表拥有者，属组，其他人的权限值(r:4;w:2;x:1)  
