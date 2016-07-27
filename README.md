@@ -120,6 +120,7 @@
 
  (16)find path -name 'file_name' 在path下查找有file_name的文件/目录  
      find . -name 'my*'     搜索当前目录（含子目录，以下同）中，所有文件名以my开头的文件    
+     find . -name '*.txt' 
 
  (17)wc -lwc file_name 统计file_name的行数，字数，字节数   
 
@@ -133,6 +134,8 @@
      rz -y 如果已存在  就覆盖
  (21)chattr  修改文件的属性
  (22)chgrp   修改文件或目录的所属群组 
+ (23)cmp 比较两个文件是否相同  cmp a.txt b.txt  会标示这两个文件的第一个不一样的位置
+ (24)file 文件的类型
 
 ### 六、权限管理命令：
 chmod xxx file_name 更改文件/目录系统权限      
