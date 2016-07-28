@@ -128,6 +128,7 @@
 
  (19)grep命令 文本搜索工具  使用正则表达式搜索文本   
      grep ‘test’ aa bb cc  在aa,bb,cc文件中搜索含有‘test’的行，并打印出来
+     grep -r test /etc/acpi   在/etc/acpi目录下面查找所有含有test的字符串  并打印出来
 
  (20)rz -be 上传文件(上传到此条命令执行的目录)
      sz 下载文件  (sz test/* 下载test目录下面的所有的文件)
