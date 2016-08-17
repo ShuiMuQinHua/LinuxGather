@@ -139,11 +139,18 @@
  (24)file 文件的类型
 
 ### 六、权限管理命令：
-chmod xxx file_name 更改文件/目录系统权限      
-chown 更改文件或目录的拥有者或所属组 chown [选项] [所有者][:[组]] 文件; chown mail:mail log2012.log        
+    chmod xxx file_name 更改文件/目录系统权限      
+    chown 更改文件或目录的拥有者或所属组 chown [选项] [所有者][:[组]] 文件; chown mail:mail log2012.log        
 
 ### 七、网络通信命令： 
     (1)linux通过命令调取接口：curl http://www.dabaojian.org/api/UserCenter/Haaaaaaaaaaaaaaaa/gettoken
     (2)ping 检查网络是否可连通
 
 ### 八、VIM命令：   
+
+### 九、快捷键
+    (1)向下翻页：ctrl+F  
+    (2)向上翻页：ctrl+B
+    (3)光标到文件的最后： G
+    (4)光标回到文件的第一行：gg
+    (5)从第一行向下10行：10G
