@@ -146,7 +146,11 @@
     (1)linux通过命令调取接口：curl http://www.dabaojian.org/api/UserCenter/Haaaaaaaaaaaaaaaa/gettoken
     (2)ping 检查网络是否可连通
 
-### 八、VIM命令：   
+### 八、VIM命令：
+    (1)linux vim命令  查找一个字符串  并且光标定位 ???
+        :/buyProgram   这个时候已经定位到这个字符串了   
+        直接按 n  定位到下一个字符串  
+        直接按 N  定位到上一个字符串  
 
 ### 九、快捷键
     (1)向下翻页：ctrl+F  
