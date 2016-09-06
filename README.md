@@ -36,6 +36,7 @@
  (6)shutdown -r now 重启(1)      
  (7)reboot 重启(2)     
  (8)logout 注销     
+ (9)重启nginx   ./nginx -s reload
 
 ### 四、用户管理命令：
  (1)useradd username 建立用户帐号    
@@ -158,3 +159,18 @@
     (3)光标到文件的最后： G
     (4)光标回到文件的第一行：gg
     (5)从第一行向下10行：10G
+
+### 十、linux常用操作
+        1.给命令起别名
+            (1) 修改   /etc/bashrc  文件 在文件尾添加你想起的别名，以及别名代表的命令。(注意等号两边不能有空格)
+                # vim:ts=4:sw=4
+                alias bmsadmin='cd /data/www/bmsadmin/'
+                alias sus='sudo su'
+                alias bmsapi='cd /data/www/bms/api/'
+            (2)source /etc/bashrc   使用这个命令，重新引入一下刚刚修改的那个文件。即可
+
+
+
+
+
+系统管理命令,打包压缩相关命令,关机重启命令,用户管理命令,文件管理命令,权限管理命令,网络通信命令,VIM命令,快捷键
