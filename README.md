@@ -169,6 +169,10 @@
                 alias bmsapi='cd /data/www/bms/api/'
             (2)source /etc/bashrc   使用这个命令，重新引入一下刚刚修改的那个文件。即可
 
+        2.临时修改了文件，之后要回退：
+          (1)修改完成后   输入w (不要输入wq)
+          (2)回退的时候  按u即可
+
 
 
 
