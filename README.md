@@ -6,10 +6,15 @@
  (1)chkconfig --list 		命令查看已设置的开启自启动列表。  
  (2)*/5 * * * * test.sh 	定时任务crontab的命令构成为   时间+动作，其时间有分、时、日、月、周五种  
  (3)& 						后台执行程序,用在一个命令的最后
- (4)uname -a 显示系统信息,查看系统版本号的方法还有：cat /proc/version ,cat /etc/redhat-release, cat /etc/issue
+ (4)uname -a 显示系统信息,查看系统版本号的方法还有：
+ cat /proc/version ,
+ cat /etc/redhat-release, 
+ cat /etc/issue
  (5)crontab -l  查看系统的定时任务
     crontab -e  添加系统的定时任务
-   
+ (6)yum install -y unzip zip  安装命令 
+ (7)nohup ./cooperation > run.log &   后台运行二进制文件
+
 ### 二、打包压缩相关命令：
  gzip：
  bzip2：
@@ -26,6 +31,8 @@
  tar -jcvf /home/abc.tar.bz2 /home/abc      打包，并用bzip2压缩
  当然，如果想解压缩，就直接替换上面的命令  tar -cvf  / tar -zcvf  / tar -jcvf 中的“c” 换成“x” 就可以了。
  解压zip文件：unzip a.zip
+ 压缩portal目录，得到portal.gz压缩包：tar  -zcvf portal.gz portal/
+                                      zip -r portal.zip ./portal
 
 ### 三、关机重启命令：
  (1)shutdown -h now 立刻关闭系统不重启(1)    
@@ -65,6 +72,7 @@
  例如：还以jdk-7u21-linux-i586.tar.gz为例。属于用户hadoop，组hadoop
  要想切换此文件所属的用户及组。可以使用命令。
  sudo chown root:root jdk-7u21-linux-i586.tar.gz
+ (21)ps aux | grep my_post  查看是否有my_post这个进程在运行。如果有就显示详细信息
 
 ### 五、文件管理命令： 
 
@@ -84,7 +92,7 @@
 
  (4)cd 用来进入某一个目录  
 
- (5)mkdir dir_name 创建目录   
+ (5)mkdir dir_name 创建目录 (-p 创建多级目录  如 cyy/123)  
 
  (6)rmdir dir_name 删除目录    
 
@@ -132,12 +140,16 @@
      grep -r test /etc/acpi   在/etc/acpi目录下面查找所有含有test的字符串  并打印出来
 
  (20)rz -be 上传文件(上传到此条命令执行的目录)
-     sz 下载文件  (sz test/* 下载test目录下面的所有的文件)
+     sz 下载文件  (sz test/* 下载test目录下面的所有的文件,如果有目录，是不能下载的)
      rz -y 如果已存在  就覆盖
  (21)chattr  修改文件的属性
  (22)chgrp   修改文件或目录的所属群组 
  (23)cmp 比较两个文件是否相同  cmp a.txt b.txt  会标示这两个文件的第一个不一样的位置
  (24)file 文件的类型
+ (25)whereis php   (搜索php文件)
+ (26)rpm -aq|grep ftp (查看是否安装了ftp命令)
+ (27)yum install lrzsz 安装上传下载文件的包  
+ (28)whereis php  (可以查看php的安装路径)
 
 ### 六、权限管理命令：
     chmod xxx file_name 更改文件/目录系统权限      
@@ -172,6 +184,8 @@
         2.临时修改了文件，之后要回退：
           (1)修改完成后   输入w (不要输入wq)
           (2)回退的时候  按u即可
+
+
 
 
 
